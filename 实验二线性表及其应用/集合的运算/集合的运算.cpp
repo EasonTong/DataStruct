@@ -31,10 +31,11 @@ int main()
 	int i, j, x, n, temp;
 	char flag = 'e';
 	//int a[100];
-	LinkList A, B;
+	LinkList A, B, E;
 
 	while (flag != 'E')
 	{
+		cin >> flag;
 		if (flag=='A')
 		{
 			cin >> n;
@@ -71,7 +72,7 @@ int main()
 				else
 				{
 					//进去就是不存在
-					C.Insert(C.Length(), B.Get(j));
+					C.Insert(C.Length() + 1, B.Get(j));
 				}
 			}
 
@@ -81,17 +82,19 @@ int main()
 		if (flag == 'I')
 		{
 			LinkList D(A);
-			for (j = 1; j <= B.Length(); j++)
+			for (j = 1; j <= D.Length(); j++)
 			{
-				if (D.Locate(B.Get(j)))
+				if (B.Locate(D.Get(j)))
 				{
 					//进去就是存在
+
+
 				}
 				else
 				{
 					//进去就是不存在
-					
-					D.Delete(D.Locate(B.Get(j)));
+					D.Delete(j);
+					j--;
 				}
 			}
 
@@ -257,7 +260,7 @@ LinkList::LinkList(LinkList &a)
 	first = new Node;
 	Node *p,*q;
 	q = first;
-	p = a.first;
+	p = a.first->next;
 	while ( p != NULL )
 	{
 		q->next = new Node;
