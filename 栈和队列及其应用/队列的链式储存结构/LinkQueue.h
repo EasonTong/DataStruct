@@ -10,8 +10,9 @@ public:
 	T DeQueue();
 	T GetQueue();
 	int Empty();
+	void GetClean();
+
 private:
 	Node<T> *front;
 	Node<T> *rear;
 };
-

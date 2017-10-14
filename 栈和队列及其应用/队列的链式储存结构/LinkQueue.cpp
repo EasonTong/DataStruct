@@ -13,6 +13,13 @@ LinkQueue<T>::LinkQueue()
 template <class T>
 LinkQueue<T>::~LinkQueue()
 {
+	Node<T> *p;
+	while (front != NULL)
+	{
+		p = front;
+		front = front->next;
+		delete p;
+	}
 }
 
 template<class T>
@@ -31,34 +38,69 @@ T LinkQueue<T>::DeQueue()
 	if (rear == front)
 	{
 		cout << "ÏÂÒç" << endl;
-		Node<T> *s = new Node<T>;
-		s->next == NULL;
+		T s;
+		s = '\0';
 	}
 	else
 	{
-		Node<T> *s = new Node<T>;
-		Node<T> *t = new Node<T>;
+		T s;
+		Node<T> *t;
 		t = front->next;
-		s->data = t->data;
+		s = t->data;
 		front->next = t->next;
-		
+
 		if (t->next == NULL)
 		{
 			rear = front;
 		}
 		delete t;
 	}
-	return T();
+	return s;
+
 }
 
 template<class T>
 T LinkQueue<T>::GetQueue()
 {
-	return T();
+	Node<T> *p;
+	T s;
+	if (front == rear)
+	{
+		cout << "ÏÂÒç" << endl;
+		s = '\0';
+	}
+	else
+	{
+		p = front->next;
+		s = p->data;
+	}
+
+	return s;
 }
 
 template<class T>
 int LinkQueue<T>::Empty()
 {
-	return 0;
+	if (front == rear)
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+template<class T>
+void LinkQueue<T>::GetClean()
+{
+	Node<T> *p;
+	while (front->next != NULL)
+	{
+		p = front;
+		front = front->next;
+		delete p;
+	}
+
+	rear = front;
 }
