@@ -1,3 +1,4 @@
+//注意最后的yes和no不大写，不能有空格
 #include <iostream>
 #include <string>
 
@@ -42,29 +43,33 @@ int main()
 		{
 			x = B.GetTop();
 
-			if (x == '('&&A[i] == ')')
+			if (x == '(' && A[i] == ')')
 			{
 				B.Pop();
 			}
-			else if (x == '{'&&A[i] == '}')
+			else if (x == '{' && A[i] == '}')
 			{
 				B.Pop();
 			}
-			else if (x == '['&&A[i] == ']')
+			else if (x == '[' && A[i] == ']')
 			{
 				B.Pop();
 			}
 			else
 			{
-				cout << "no" << endl;
+				//cout << "no" << endl;
+				cout << "no" ;
 				flag = 1;
+				break;
+				
 			}
 		}
 	}
 
 	if (flag == 0)
 	{
-		cout << "yes" << endl;
+		//cout << "yes" << endl;
+		cout << "yes";
 	}
 
 	return 0;
