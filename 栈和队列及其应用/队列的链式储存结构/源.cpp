@@ -1,21 +1,17 @@
 #include <iostream>
 #include "LinkQueue.h"
-
+//#include "LinkQueue.cpp"
 using namespace std;
 
-template <class T>
-struct Node
-{
-	T Data;
-	Node<T> *next;
-};
+
+//template<T> class LinkQueue;
 
 int main()
 {
 	//Node<char> M;
 	//cout << "Hello World" << endl;
 	char x;
-	Node<char> temp;
+	Node temp;
 	char flag = 'e';
 	LinkQueue<char> A;
 

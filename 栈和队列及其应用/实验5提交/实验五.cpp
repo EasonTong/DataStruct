@@ -1,11 +1,38 @@
-#include "LinkQueue.h"
+#include <iostream>
+//#include "LinkQueue.h"
+using namespace std;
+
+
+
+struct Node
+{
+	char Data;
+	Node *next;
+};
+
+template <class T>
+class LinkQueue
+{
+public:
+	LinkQueue();
+	virtual ~LinkQueue();
+	void EnQueue(T x);
+	T DeQueue();
+	T GetQueue();
+	int Empty();
+	void GetClean();
+
+private:
+	Node *front;
+	Node *rear;
+};
 
 
 template <class T>
 LinkQueue<T>::LinkQueue()
 {
 	Node *s = new Node;
-	s->Data = NULL;
+	s->next = NULL;
 	front = s;
 	rear = s;
 }
@@ -36,10 +63,9 @@ template<class T>
 T LinkQueue<T>::DeQueue()
 {
 	T s;
-
 	if (rear == front)
 	{
-		cout << "下溢" << endl;
+		cout << "None" << endl;
 		//T s;
 		s = '\0';
 	}
@@ -68,7 +94,7 @@ T LinkQueue<T>::GetQueue()
 	T s;
 	if (front == rear)
 	{
-		cout << "下溢" << endl;
+		cout << "None" << endl;
 		s = '\0';
 	}
 	else
@@ -105,4 +131,54 @@ void LinkQueue<T>::GetClean()
 	}
 
 	rear = front;
+}
+//template<T> class LinkQueue;
+
+int main()
+{
+	//Node<char> M;
+	//cout << "Hello World" << endl;
+	char x;
+	Node temp;
+	char flag = 'e';
+	LinkQueue<char> A;
+
+	while (flag != 'Q')
+	{
+		cin >> flag;
+
+		if (flag == 'E')
+		{
+			//入队
+			cin >> x;
+			A.EnQueue(x);
+		}
+
+		if (flag == 'C')
+		{
+			A.GetClean();
+		}
+
+		if (flag == 'G')
+		{
+			x = A.GetQueue();
+			if (x != '\0')
+			{
+				cout << x << endl;
+			}
+		}
+
+		if (flag == 'D')
+		{
+			x = A.DeQueue();
+			if (x != '\0')
+			{
+				cout << x << endl;
+			}
+		}
+	}
+
+
+
+	return 0;
 }
