@@ -5,7 +5,7 @@ template <class T>
 LinkQueue<T>::LinkQueue()
 {
 	Node *s = new Node;
-	s->Data = NULL;
+	s->next = NULL;
 	front = s;
 	rear = s;
 }
@@ -40,8 +40,9 @@ T LinkQueue<T>::DeQueue()
 	if (rear == front)
 	{
 		cout << "下溢" << endl;
+		//这里需要根据需求修改
 		//T s;
-		s = '\0';
+		//s = '\0';
 	}
 	else
 	{
@@ -69,7 +70,8 @@ T LinkQueue<T>::GetQueue()
 	if (front == rear)
 	{
 		cout << "下溢" << endl;
-		s = '\0';
+		//s = '\0';
+		//这里需要根基需求更改
 	}
 	else
 	{
