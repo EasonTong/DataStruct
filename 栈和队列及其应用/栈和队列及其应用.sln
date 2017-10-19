@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "实验5提交", "实验5提
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "判断一个字符串中括号是否匹配", "判断一个字符串中括号是否匹配\判断一个字符串中括号是否匹配.vcxproj", "{198E042E-57D5-4F1A-9887-05666A31EF1F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "考试3题", "考试3题\考试3题.vcxproj", "{96F9F9B1-3567-4499-A2FA-7FA13BECBBCC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -81,6 +83,14 @@ Global
 		{198E042E-57D5-4F1A-9887-05666A31EF1F}.Release|x64.Build.0 = Release|x64
 		{198E042E-57D5-4F1A-9887-05666A31EF1F}.Release|x86.ActiveCfg = Release|Win32
 		{198E042E-57D5-4F1A-9887-05666A31EF1F}.Release|x86.Build.0 = Release|Win32
+		{96F9F9B1-3567-4499-A2FA-7FA13BECBBCC}.Debug|x64.ActiveCfg = Debug|x64
+		{96F9F9B1-3567-4499-A2FA-7FA13BECBBCC}.Debug|x64.Build.0 = Debug|x64
+		{96F9F9B1-3567-4499-A2FA-7FA13BECBBCC}.Debug|x86.ActiveCfg = Debug|Win32
+		{96F9F9B1-3567-4499-A2FA-7FA13BECBBCC}.Debug|x86.Build.0 = Debug|Win32
+		{96F9F9B1-3567-4499-A2FA-7FA13BECBBCC}.Release|x64.ActiveCfg = Release|x64
+		{96F9F9B1-3567-4499-A2FA-7FA13BECBBCC}.Release|x64.Build.0 = Release|x64
+		{96F9F9B1-3567-4499-A2FA-7FA13BECBBCC}.Release|x86.ActiveCfg = Release|Win32
+		{96F9F9B1-3567-4499-A2FA-7FA13BECBBCC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
