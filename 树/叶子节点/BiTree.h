@@ -1,9 +1,8 @@
 #pragma once
 
 #include <iostream>
-#include "LinkQueue.h";
 using namespace std;
-
+#include "LinkQueue.h";
 
 template <class T>
 struct BiNode
@@ -15,12 +14,6 @@ struct BiNode
 	bool rtag;
 };
 
-//template <class T>
-//struct Node
-//{
-//	BiNode<T> Data;
-//	Node *next;
-//};
 
 template <class T>
 class BiTree
@@ -46,7 +39,13 @@ public:
 	{
 		PostOrder(root);
 	}
+	void LeafNode()
+	{
+		LeafNode(root);
+	}
 	void LeverOrder();
+	int IsEmpty();
+	
 
 private:
 	BiNode<T> *root;
@@ -56,6 +55,7 @@ private:
 	void PostOrder(BiNode<T> *bt);
 	void Release(BiNode<T> *bt);
 	LinkQueue<BiNode<T>*> Layer;
+	void LeafNode(BiNode<T> *bt);
 };
 
 template <class T>
@@ -65,7 +65,7 @@ BiNode<T>* BiTree<T>::Creat(BiNode<T> *bt)
 	T ch;
 	cin >> ch;
 
-	if(ch == 0)
+	if (ch == '#')
 	{
 		bt = NULL;
 	}
@@ -144,6 +144,19 @@ void BiTree<T>::LeverOrder()
 	}
 }
 
+template<class T>
+int BiTree<T>::IsEmpty()
+{
+	if (root == NULL)
+	{
+		return 1;
+	} 
+	else
+	{
+		return 0;
+	}
+}
+
 template <class T>
 void BiTree<T>::Release(BiNode<T> *bt)
 {
@@ -153,6 +166,30 @@ void BiTree<T>::Release(BiNode<T> *bt)
 		Release(bt->lchild);
 		Release(bt->rchild);
 		delete bt;
+	}
+}
+
+template<class T>
+void BiTree<T>::LeafNode(BiNode<T>* bt)
+{
+	if (root==NULL)
+	{
+		cout << "NULL" << endl;
+	}
+
+	if (bt != NULL)
+	{
+		//以后这里的输出可能需要更改
+		if (bt->lchild==NULL && bt->rchild==NULL)
+		{
+			cout << bt->data << ' ';
+		}
+		else
+		{
+			LeafNode(bt->lchild);
+			LeafNode(bt->rchild);
+		}
+		
 	}
 }
 
