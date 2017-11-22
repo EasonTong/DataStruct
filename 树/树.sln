@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "深度提交", "深度提�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "节点个数", "节点个数\节点个数.vcxproj", "{E8F893E5-F29D-4B66-8DAE-BCD07215EDB5}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "中序线索二叉树的建立", "中序线索二叉树的建立\中序线索二叉树的建立.vcxproj", "{D439B4B6-90C3-4784-BB4B-CCA908D33AAD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -81,6 +83,14 @@ Global
 		{E8F893E5-F29D-4B66-8DAE-BCD07215EDB5}.Release|x64.Build.0 = Release|x64
 		{E8F893E5-F29D-4B66-8DAE-BCD07215EDB5}.Release|x86.ActiveCfg = Release|Win32
 		{E8F893E5-F29D-4B66-8DAE-BCD07215EDB5}.Release|x86.Build.0 = Release|Win32
+		{D439B4B6-90C3-4784-BB4B-CCA908D33AAD}.Debug|x64.ActiveCfg = Debug|x64
+		{D439B4B6-90C3-4784-BB4B-CCA908D33AAD}.Debug|x64.Build.0 = Debug|x64
+		{D439B4B6-90C3-4784-BB4B-CCA908D33AAD}.Debug|x86.ActiveCfg = Debug|Win32
+		{D439B4B6-90C3-4784-BB4B-CCA908D33AAD}.Debug|x86.Build.0 = Debug|Win32
+		{D439B4B6-90C3-4784-BB4B-CCA908D33AAD}.Release|x64.ActiveCfg = Release|x64
+		{D439B4B6-90C3-4784-BB4B-CCA908D33AAD}.Release|x64.Build.0 = Release|x64
+		{D439B4B6-90C3-4784-BB4B-CCA908D33AAD}.Release|x86.ActiveCfg = Release|Win32
+		{D439B4B6-90C3-4784-BB4B-CCA908D33AAD}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
