@@ -72,9 +72,18 @@ void MGraph<T>::BFSTraverse(int v)
 	int front = -1;
 	int rear = -1;
 	int Q[Maxsize + 1];
-	cout << vertex[v] << " ";
-	visited[v] = 1;
-	Q[++rear] = v;
+	
+	
+	if (visited[v] == 0)
+	{
+		cout << vertex[v] << " ";
+		visited[v] = 1;
+		Q[++rear] = v;
+	}
+	
+	//cout << vertex[v] << " ";
+	//visited[v] = 1;
+	//Q[++rear] = v;
 
 	int j;
 	while (front!=rear)
@@ -97,9 +106,13 @@ template <class T>
 void MGraph<T>::DFSTraverse(int v)
 {
 	int j;
-
-	cout << vertex[v] << " ";
-	visited[v] = 1;
+	
+	if (visited[v] == 0)
+	{
+		cout << vertex[v] << " ";
+		visited[v] = 1;
+	}
+	
 	for (j = 0; j<vertexNum; j++)
 	{
 		if (arc[v][j] == 1 && visited[j] == 0)
