@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test1", "test1\test1.vcxproj", "{6635F59F-AA29-4413-8EDD-AD28E04388E2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "文本编辑器", "文本编辑器\文本编辑器.vcxproj", "{70C5E78F-9CD6-4EAD-B22E-B443027FBF30}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test2", "test2\test2.vcxproj", "{0AA8E1F5-4D95-44B0-84B0-F2AAB2DA0DA7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6635F59F-AA29-4413-8EDD-AD28E04388E2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6635F59F-AA29-4413-8EDD-AD28E04388E2}.Debug|Win32.Build.0 = Debug|Win32
+		{6635F59F-AA29-4413-8EDD-AD28E04388E2}.Release|Win32.ActiveCfg = Release|Win32
+		{6635F59F-AA29-4413-8EDD-AD28E04388E2}.Release|Win32.Build.0 = Release|Win32
+		{70C5E78F-9CD6-4EAD-B22E-B443027FBF30}.Debug|Win32.ActiveCfg = Debug|Win32
+		{70C5E78F-9CD6-4EAD-B22E-B443027FBF30}.Debug|Win32.Build.0 = Debug|Win32
+		{70C5E78F-9CD6-4EAD-B22E-B443027FBF30}.Release|Win32.ActiveCfg = Release|Win32
+		{70C5E78F-9CD6-4EAD-B22E-B443027FBF30}.Release|Win32.Build.0 = Release|Win32
+		{0AA8E1F5-4D95-44B0-84B0-F2AAB2DA0DA7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0AA8E1F5-4D95-44B0-84B0-F2AAB2DA0DA7}.Debug|Win32.Build.0 = Debug|Win32
+		{0AA8E1F5-4D95-44B0-84B0-F2AAB2DA0DA7}.Release|Win32.ActiveCfg = Release|Win32
+		{0AA8E1F5-4D95-44B0-84B0-F2AAB2DA0DA7}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
